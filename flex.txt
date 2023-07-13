@@ -1,0 +1,111 @@
+const int GND = GND;
+const int x=A4;
+const int y=A5;
+const int PowerPIN = A5;
+float a,d,r;
+float b,e,s;
+float c,f,t;
+float g,h,u;
+void setup()
+{
+  Serial.begin(9600);
+  
+  pinMode(A0,INPUT);
+}
+void loop()
+{
+  a=analogRead(A1);
+  d=(a*5)/1023;
+  r=(1000*d)/(5-d);
+  b=analogRead(A3);
+  e=(b*5)/1023;
+  s=(1000*e)/(5-e); 
+  c=analogRead(A0);
+  f=(c*5)/1023;
+  t=(1000*f)/(5-f); 
+  g=analogRead(A2);
+  h=(g*5)/1023;
+  u=(1000*h)/(5-h); 
+  if(r>35000 and s<35000 and t<35000 and u<35000 and analogRead(x)<360 and analogRead(y)<360){
+  Serial.println("a worm welcome to you all ");
+  
+  
+  } 
+  if(r<35000 and s>40000 and t<35000 and u<35000 and analogRead(x)<360 and analogRead(y)<360){
+  Serial.println("good morning one and all");
+  }
+  
+  if(r<35000 and s<35000 and t>35000 and u<35000 and analogRead(x)<360 and analogRead(y)<360){
+  Serial.println("i want some food");
+  }
+  
+  if(r<35000 and s<35000 and t<35000 and u>35000 and analogRead(x)<360 and analogRead(y)<360){
+  Serial.println("i need medicine");
+  }
+  else if(r<35000 and s<35000 and t<35000 and u<35000 and analogRead(x)>360 and analogRead(y)<360){
+  Serial.println("nice to meet you");
+  }
+  
+  else if(r>35000 and s<35000 and t<35000 and u<35000 and analogRead(x)>360){
+  Serial.println("1");
+  }
+  else if(r<35000 and s>35000 and t<35000 and u<35000 and analogRead(x)>360){
+  Serial.println("2");
+  }
+  else if(r<35000 and s<35000 and t>35000 and u>35000 and analogRead(x)>360){
+  Serial.println("3");
+  }
+  else if(r<35000 and s<35000 and t<35000 and u>35000 and analogRead(x)>360){
+  Serial.println("4");
+  }
+  else if(r>35000 and s>35000 and t<35000 and u<35000 and analogRead(x)>360){
+  Serial.println("5");
+  }
+  else if(r<35000 and s>35000 and t<35000 and u>35000 and analogRead(x)>360){
+  Serial.println("6");
+  }
+  else if(r>35000 and s<35000 and t<35000 and u>35000 and analogRead(x)>360){
+  Serial.println("7");
+  }
+ 
+  if(r<35000 and s<35000 and t<55000 and u<35000 and analogRead(x)>300 and analogRead(y)<300){
+  Serial.println("here we are introduce smart glove");
+  }
+  
+  if(r>35000 and s<35000 and t<35000 and u<35000 and analogRead(y)<300){
+  Serial.println("8");
+  }
+  if(r<35000 and s>35000 and t<35000 and u<35000 and analogRead(y)<300){
+  Serial.println("9");
+  }
+  if(r<35000 and s<35000 and t>35000 and u>35000 and analogRead(x)>300 and analogRead(y)<300){
+  Serial.println("10");
+  }
+  if(r<35000 and s<35000 and t<35000 and u>35000 and analogRead(x)>300 and analogRead(y)<300){
+  Serial.println("11");
+  }
+  if(r>35000 and s>35000 and t<35000 and u<35000 and analogRead(x)>300 and analogRead(y)<300){
+  Serial.println("12");
+  }
+  if(r<35000 and s>35000 and t<35000 and u>35000 and analogRead(x)>300 and analogRead(y)<300){
+  Serial.println("13");
+  }
+  if(r>35000 and s<35000 and t<35000 and u>35000 and analogRead(x)>300 and analogRead(y)<300){
+  Serial.println("14");
+  }
+  if(r>35000 and s>40000 and t<35000 and u<35000 and analogRead(x)<360 and analogRead(y)<360){
+  Serial.println("simon");
+  }
+  if(r<35000 and s>40000 and t<35000 and u>35000 and analogRead(x)<360 and analogRead(y)<360){
+  Serial.println("bhaskar");
+  }
+  if(r>35000 and s<40000 and t<35000 and u>35000 and analogRead(x)<360 and analogRead(y)<360){
+  Serial.println("teja");
+  }
+  if(r>35000 and s>40000 and t<35000 and u>35000 and analogRead(x)<360 and analogRead(y)<360){
+  Serial.println("uday");
+  }
+  
+  
+  delay(2000);
+}
