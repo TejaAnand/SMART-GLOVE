@@ -94,16 +94,16 @@ void loop()
   Serial.println("14");
   }
   if(r>35000 and s>40000 and t<35000 and u<35000 and analogRead(x)<360 and analogRead(y)<360){
-  Serial.println("simon");
+  Serial.println("15");
   }
   if(r<35000 and s>40000 and t<35000 and u>35000 and analogRead(x)<360 and analogRead(y)<360){
-  Serial.println("bhaskar");
+  Serial.println("16");
   }
   if(r>35000 and s<40000 and t<35000 and u>35000 and analogRead(x)<360 and analogRead(y)<360){
-  Serial.println("teja");
+  Serial.println("17");
   }
   if(r>35000 and s>40000 and t<35000 and u>35000 and analogRead(x)<360 and analogRead(y)<360){
-  Serial.println("uday");
+  Serial.println("18");
   }
   
   
