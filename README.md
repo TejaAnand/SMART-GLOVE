@@ -33,4 +33,4 @@ Smart-Glove/
 └── requirements.txt      # Development dependencies
 
 
-https://drive.google.com/drive/folders/1SRliZxgAP08aJOCZN3NXApLTGDXerMNB
+
